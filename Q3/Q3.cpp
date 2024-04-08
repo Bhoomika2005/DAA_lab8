@@ -97,6 +97,12 @@ int union2(int i, int sum)
 // Driver Code
 int main()
 {
+    ios::sync_with_stdio(0);
+    cin.tie(NULL);
+
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+
     // V-> Number of vertices,
     // E-> Number of edges
     int V, E;

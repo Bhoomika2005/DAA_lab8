@@ -2,7 +2,7 @@
 using namespace std;
 bool compareEdges(const vector<int> &a, const vector<int> &b)
 {
-    return a[0] > b[0]; 
+    return a[0] > b[0];
 }
 class DSU
 {
@@ -104,13 +104,23 @@ public:
 // Driver code
 int main()
 {
-    Graph g(4);
-    g.addEdge(0, 1, 10);
-    g.addEdge(1, 3, 15);
-    g.addEdge(2, 3, 4);
-    g.addEdge(2, 0, 6);
-    g.addEdge(0, 3, 5);
 
+    ios::sync_with_stdio(0);
+    cin.tie(NULL);
+
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+
+    int V, E;
+    cin >> V >> E;
+
+    Graph g(E);
+    int u, v, w;
+    for (int i = 0; i < E; i++)
+    {
+        cin >> u >> v >> w;
+        g.addEdge(u, v, w);
+    }
     // Function call
     g.kruskals_mst();
 

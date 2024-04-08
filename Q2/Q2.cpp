@@ -81,6 +81,12 @@ int getCost(int n,int m){
 // Driver code
 int main()
 {
+	ios::sync_with_stdio(0);
+	cin.tie(NULL);
+
+	freopen("input.txt", "r", stdin);
+	freopen("output.txt", "w", stdout);
+
 	int n = 3, m = 4;
 	vector<pair<pair<int, int>, pair<int, char> > > vp = {
 		{ { 1, 2 }, { 2, 'B' } },
